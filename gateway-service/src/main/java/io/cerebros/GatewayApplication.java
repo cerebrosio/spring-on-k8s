@@ -1,4 +1,4 @@
-package pl.piomin.services.gateway;
+package io.cerebros;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

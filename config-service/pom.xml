@@ -6,7 +6,7 @@
 		<version>2.0.6.RELEASE</version>
 	</parent>
 	<artifactId>config-service</artifactId>
-	<groupId>pl.piomin.services</groupId>
+	<groupId>io.cerebros</groupId>
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
