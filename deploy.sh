@@ -39,12 +39,21 @@ echo    "################################"
 echo
 echo    "################################"
 echo    "Handle organization-service..."
+cd      ..
 cd      organization-service/
 mvn     clean install
 docker  build -t cerebrosio/organization-service:1.0 .
 docker  push cerebrosio/organization-service:1.0
 kubectl apply -f deployment.yaml
 echo    "Handle organization-service DONE"
+echo    "################################"
+echo
+echo    "################################"
+echo    "Handle gateway-ingress..."
+cd      ..
+cd      gateway-ingress/
+kubectl apply -f ingress.yaml
+echo    "Handle gateway-ingress DONE"
 echo    "################################"
 echo
 echo "################################"
