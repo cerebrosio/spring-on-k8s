@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import io.cerebros.model.Department;
 
-@FeignClient(url = "http://department-service", name = "department-service")
+@FeignClient(name = "department-service")
 public interface DepartmentClient {
 
 	@GetMapping("/organization/{organizationId}")
