@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: gateway-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   backend:
     serviceName: default-http-backend
@@ -12,15 +12,15 @@ spec:
     - host: localhost
       http:
         paths:
-          - path: /employee-service
+          - path: /employee-service(/|$)(.*)
             backend:
               serviceName: employee-service
-              servicePort: 8080
-          - path: /department-service
+              servicePort: 80
+          - path: /department-service(/|$)(.*)
             backend:
               serviceName: department-service
               servicePort: 8080
-          - path: /organization-service
+          - path: /organization-service(/|$)(.*)
             backend:
               serviceName: organization-service
               servicePort: 8080
