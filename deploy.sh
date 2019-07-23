@@ -14,31 +14,41 @@ echo    "################################"
 echo
 echo    "################################"
 echo    "Handle employee-service..."
-sh      /employee-service/deploy.sh
+cd      employee-service/
+sh      deploy.sh
+cd      ..
 echo    "Handle employee-service DONE"
 echo    "################################"
 echo
 echo    "################################"
 echo    "Handle department-service..."
-sh      /department-service/deploy.sh
+cd      department-service/
+sh      deploy.sh
+cd      ..
 echo    "Handle department-service DONE"
 echo    "################################"
 echo
 echo    "################################"
 echo    "Handle organization-service..."
-sh      /organization-service/deploy.sh
+cd      organization-service/
+sh      deploy.sh
+cd      ..
 echo    "Handle organization-service DONE"
 echo    "################################"
 echo
 echo    "################################"
 echo    "Handle organization-service..."
-sh      /config-service/deploy.sh
+cd      config-service/
+sh      deploy.sh
+cd      ..
 echo    "Handle organization-service DONE"
 echo    "################################"
 echo
 echo    "################################"
 echo    "Handle gateway-ingress..."
-sh      /gateway-ingress/deploy.sh
+cd      gateway-ingress/
+sh      deploy.sh
+cd      ..
 echo    "Handle gateway-ingress DONE"
 echo    "################################"
 echo
