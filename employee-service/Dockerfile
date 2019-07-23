@@ -1,5 +1,6 @@
 FROM openjdk:8-jre-alpine
-ENV APP_FILE employee-service-1.1-SNAPSHOT.jar
+ARG APP_VER
+ENV APP_FILE employee-service-$APP_VER.jar
 ENV APP_HOME /usr/apps
 EXPOSE 8080
 COPY target/$APP_FILE $APP_HOME/

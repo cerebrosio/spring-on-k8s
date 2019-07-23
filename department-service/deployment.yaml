@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: department-service
-        image: cerebrosio/department-service:1.0
+        image: cerebrosio/department-service:{APP_VER}
         ports:
         - containerPort: 8080
 

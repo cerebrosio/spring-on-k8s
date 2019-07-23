@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: organization-service
-        image: cerebrosio/organization-service:1.0
+        image: cerebrosio/organization-service:{APP_VER}
         ports:
         - containerPort: 8080
 

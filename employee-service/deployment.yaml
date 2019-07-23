@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: employee-service
-        image: cerebrosio/employee-service:1.1
+        image: cerebrosio/employee-service:{APP_VER}
         ports:
         - containerPort: 8080
 

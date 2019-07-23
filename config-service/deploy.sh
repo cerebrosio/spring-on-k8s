@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-echo    "################################"
+echo    "################################################################"
 echo    "Deploy of config-service version $1 ..."
 echo    "Cleanup k8s resources..."
 kubectl delete service,deployment config-service
@@ -15,5 +15,5 @@ cat     deployment.yaml
 kubectl apply -f deployment.yaml
 sed     -i "s/$1/{APP_VER}/g" deployment.yaml
 echo    "Handle config-service DONE"
-echo    "################################"
+echo    "################################################################"
 echo    `date`
