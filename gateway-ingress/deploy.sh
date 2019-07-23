@@ -2,10 +2,7 @@
 
 echo
 echo    "Cleanup resources..."
-kubectl delete service,deployment organization-service
+kubectl delete ingress gateway-ingress
 echo    "Cleanup resources DONE"
-mvn     clean install
-docker  build -t cerebrosio/organization-service:1.0 .
-docker  push cerebrosio/organization-service:1.0
-kubectl apply -f deployment.yaml
+kubectl apply -f ingress.yaml
 echo `date`

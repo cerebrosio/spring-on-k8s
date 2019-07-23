@@ -37,11 +37,11 @@ echo    "Handle organization-service DONE"
 echo    "################################"
 echo
 echo    "################################"
-echo    "Handle organization-service..."
+echo    "Handle config-service..."
 cd      config-service/
 sh      deploy.sh
 cd      ..
-echo    "Handle organization-service DONE"
+echo    "Handle config-service DONE"
 echo    "################################"
 echo
 echo    "################################"
