@@ -19,8 +19,8 @@ spec:
           - path: /department-service(/|$)(.*)
             backend:
               serviceName: department-service
-              servicePort: 8080
+              servicePort: 80
           - path: /organization-service(/|$)(.*)
             backend:
               serviceName: organization-service
-              servicePort: 8080
+              servicePort: 80
