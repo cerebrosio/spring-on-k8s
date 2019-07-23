@@ -31,6 +31,12 @@ echo    "Handle organization-service DONE"
 echo    "################################"
 echo
 echo    "################################"
+echo    "Handle organization-service..."
+sh      /config-service/deploy.sh
+echo    "Handle organization-service DONE"
+echo    "################################"
+echo
+echo    "################################"
 echo    "Handle gateway-ingress..."
 sh      /gateway-ingress/deploy.sh
 echo    "Handle gateway-ingress DONE"
