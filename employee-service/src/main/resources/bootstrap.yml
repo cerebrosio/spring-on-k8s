@@ -4,3 +4,6 @@ spring:
   cloud:
     config:
       uri: http://config-service
+  profiles:
+    active: 'native'
+

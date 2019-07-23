@@ -13,6 +13,14 @@ echo    "Cleanup resources DONE"
 echo    "################################"
 echo
 echo    "################################"
+echo    "Handle config-service..."
+cd      config-service/
+sh      deploy.sh
+cd      ..
+echo    "Handle config-service DONE"
+echo    "################################"
+echo
+echo    "################################"
 echo    "Handle employee-service..."
 cd      employee-service/
 sh      deploy.sh
@@ -34,14 +42,6 @@ cd      organization-service/
 sh      deploy.sh
 cd      ..
 echo    "Handle organization-service DONE"
-echo    "################################"
-echo
-echo    "################################"
-echo    "Handle config-service..."
-cd      config-service/
-sh      deploy.sh
-cd      ..
-echo    "Handle config-service DONE"
 echo    "################################"
 echo
 echo    "################################"
